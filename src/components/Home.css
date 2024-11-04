@@ -1,0 +1,60 @@
+/* src/components/Home.css */
+
+main {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent overflow if the image is large */
+  }
+  
+  .left-sec {
+    display: flex; /* Use flexbox for centering text */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2rem;
+    background-image: url('../image/content.png'); /* Set background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: black; /* White text for contrast */
+    position: relative; /* Position relative for overlay */
+    text-align: center; /* Center text horizontally */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
+  
+  .left-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 0; /* Place it behind the text */
+  }
+  
+  .left-sec h2,
+  .left-sec h1,
+  .left-sec h3 {
+    position: relative; /* Ensure headings are above any overlay */
+    z-index: 1; /* Bring text above the background */
+  }
+  
+  .left-sec h1 {
+    font-size: 3rem; /* Adjust font size for emphasis */
+  }
+  
+  .left-sec h2 {
+    font-size: 2rem; /* Adjust font size */
+  }
+  
+  .left-sec h3 {
+    font-size: 1.7rem; /* Adjust font size */
+  }
+  .left-sec p {
+    font-size: 1.7rem; /* Adjust font size */
+  }
+  

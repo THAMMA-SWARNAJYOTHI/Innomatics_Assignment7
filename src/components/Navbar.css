@@ -1,0 +1,49 @@
+/* src/components/Navbar.css */
+
+.mainheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .navi {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    flex-grow: 1; /* Allow the navigation section to grow */
+  }
+  
+  .btn {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .help {
+    margin-left: auto; /* Align help button to the right */
+  }
+  
+  .help button {
+    padding: 0.5rem 1rem;
+    background-color: #ff5722; /* Red background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .help button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+  }
+  

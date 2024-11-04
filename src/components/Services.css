@@ -1,0 +1,50 @@
+/* src/components/Book.css */
+
+.service {
+    padding: 1rem; /* Padding around the service */
+  }
+  
+  .head h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .levels {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    margin: 1rem 0; /* Space above and below */
+  }
+  
+  .heart, .oxygen {
+    flex: 1; /* Allow both iframes to take equal space */
+    margin: 0 0.5rem; /* Space between the iframes */
+    max-width: 500px; /* Set a max width for the iframes */
+    height: 300px; /* Fixed height for the iframes */
+  }
+  
+  iframe {
+    width: 100%; /* Make iframe full width of the container */
+    height: 100%; /* Full height of the container */
+    border: none; /* Remove default border */
+  }
+  
+  .help {
+    text-align: center; /* Center the "Go Back" button */
+    margin-top: 1rem; /* Space above the button */
+  }
+  
+  .back {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-weight: bold; /* Bold text */
+    font-size: 0.9rem; /* Font size */
+  }
+  
+  .back:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
